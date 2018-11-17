@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #74c5c0;
+  font-family: sans-serif;
+}
+a,
+h1 {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.intro {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 30px auto;
+}
+.intro header {
+  display: flex;
+  justify-content: space-between;
+  align-self: end;
+}
+.intro header nav {
+  justify-content: flex-end;
+}
+.intro header nav a {
+  margin-left: 30px;
+}
+.intro .intro__image {
+  align-self: end;
+}
+.container {
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 30px auto;
+}
+.container .accueil {
+  background-color: #d11221;
+}

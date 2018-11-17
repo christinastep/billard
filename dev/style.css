@@ -3,74 +3,104 @@ body {
   overflow-x: hidden;
   margin-right: auto;
   margin-left: auto;
-  margin-top: -5px; }
-
-p, a, span, h1, h2, h3 {
+  margin-top: -5px;
+}
+p,
+a,
+span,
+h1,
+h2,
+h3 {
   font-size: 20px;
   letter-spacing: 0.5px;
   line-height: 30px;
   color: white;
   font-weight: bold;
-  text-decoration: none; }
-  @media screen and (max-width: 767px) {
-    p, a, span, h1, h2, h3 {
-      font-size: 15px;
-      line-height: 25px; } }
-  p:hover, a:hover, span:hover, h1:hover, h2:hover, h3:hover {
-    color: white;
-    text-decoration: none; }
-
+  text-decoration: none;
+}
+@media only screen and (max-width : 767px) {
+  p,
+  a,
+  span,
+  h1,
+  h2,
+  h3 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+p:hover,
+a:hover,
+span:hover,
+h1:hover,
+h2:hover,
+h3:hover {
+  color: white;
+  text-decoration: none;
+}
 .clear {
-  clear: both; }
-
+  clear: both;
+}
 .a--underlined {
-  position: relative; }
-  .a--underlined:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 3px;
-    bottom: -8px;
-    background-color: white;
-    left: 0; }
-
+  position: relative;
+}
+.a--underlined:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  bottom: -8px;
+  background-color: white;
+  left: 0;
+}
 header {
-  position: relative; }
+  position: relative;
+}
+header h1 {
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  left: 20px;
+}
+@media only screen and (min-width : 768px) {
   header h1 {
-    position: fixed;
-    z-index: 100;
-    top: 10px;
-    left: 20px; }
-    @media screen and (min-width: 768px) {
-      header h1 {
-        left: 60px; } }
+    left: 60px;
+  }
+}
+header nav {
+  position: fixed;
+  z-index: 100;
+  display: none;
+}
+@media only screen and (min-width : 768px) {
   header nav {
-    position: fixed;
-    z-index: 100;
-    display: none; }
-    @media screen and (min-width: 768px) {
-      header nav {
-        display: block;
-        right: 0;
-        top: 20px; } }
-    header nav a {
-      display: block; }
-      @media screen and (min-width: 768px) {
-        header nav a {
-          display: inline;
-          margin-right: 30px; } }
-
+    display: block;
+    right: 0;
+    top: 20px;
+  }
+}
+header nav a {
+  display: block;
+}
+@media only screen and (min-width : 768px) {
+  header nav a {
+    display: inline;
+    margin-right: 30px;
+  }
+}
 .intro {
-  background-color: #74c5c0;
+  background-color: #74c5c;
   height: 100vh;
   background-image: url(../img/tabel--balls.svg);
   width: 100%;
   background-repeat: no-repeat;
-  background-position: bottom left; }
-  @media screen and (max-width: 999px) {
-    .intro {
-      background-size: 173%; } }
-
+  background-position: bottom left;
+}
+@media screen and (max-width: 999px) {
+  .intro {
+    background-size: 173%;
+  }
+}
 .accueil {
   position: relative;
   background-image: url(../img/table.svg);
@@ -80,160 +110,222 @@ header {
   background-repeat: no-repeat;
   background-position: top left;
   border-top: 24vh solid #37b3b1;
-  background-size: 100%; }
-  @media screen and (max-width: 999px) {
-    .accueil {
-      background-size: 173%; } }
-  @media screen and (max-width: 767px) {
-    .accueil {
-      border-top: 32vh solid #37b3b1; } }
-  @media screen and (max-width: 374px) {
-    .accueil {
-      border-top: 50vh solid #37b3b1; } }
-  @media screen and (min-width: 768px) {
-    .accueil {
-      border-top: 35vh solid #37b3b1; } }
+  background-size: 100%;
+}
+@media screen and (max-width: 999px) {
+  .accueil {
+    background-size: 173%;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .accueil {
+    border-top: 32vh solid #37b3b1;
+  }
+}
+@media screen and (max-width: 374px) {
+  .accueil {
+    border-top: 50vh solid #37b3b1;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .accueil {
+    border-top: 35vh solid #37b3b1;
+  }
+}
+.accueil .text--accueil {
+  position: absolute;
+}
+@media only screen and (max-width : 767px) {
   .accueil .text--accueil {
-    position: absolute; }
-    @media screen and (max-width: 767px) {
-      .accueil .text--accueil {
-        top: -29vh;
-        padding: 0 15px; } }
-    @media screen and (max-width: 374px) {
-      .accueil .text--accueil {
-        top: -40vh; } }
-    @media screen and (min-width: 768px) {
-      .accueil .text--accueil {
-        top: -2vh;
-        width: 50%;
-        right: 0; } }
-    @media screen and (min-width: 999px) {
-      .accueil .text--accueil {
-        top: -10vh;
-        right: 5vw;
-        width: 30%; } }
-
+    top: -29vh;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .accueil .text--accueil {
+    top: -40vh;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .accueil .text--accueil {
+    top: -2vh;
+    width: 50%;
+    right: 0;
+  }
+}
+@media screen and (min-width: 999px) {
+  .accueil .text--accueil {
+    top: -10vh;
+    right: 5vw;
+    width: 30%;
+  }
+}
 .club {
   background-color: #d11221;
-  position: relative; }
-  @media screen and (max-width: 766px) {
-    .club {
-      margin-top: -160px; } }
+  position: relative;
+}
+@media only screen and (max-width : 767px) {
+  .club {
+    margin-top: -160px;
+  }
+}
+.club .club__content {
+  width: 100%;
+}
+@media only screen and (min-width : 768px) {
   .club .club__content {
-    width: 100%; }
-    @media screen and (min-width: 767px) {
-      .club .club__content {
-        margin-left: 7%; } }
-    @media screen and (min-width: 999px) {
-      .club .club__content {
-        top: -87vh; } }
-    .club .club__content .text--club {
-      padding-left: 50px;
-      width: 100%;
-      margin-bottom: 0;
-      padding-bottom: 50px;
-      margin-top: 0; }
-      @media screen and (max-width: 767px) {
-        .club .club__content .text--club {
-          margin-top: 30px; } }
-
+    margin-left: 7%;
+  }
+}
+@media screen and (min-width: 999px) {
+  .club .club__content {
+    top: -87vh;
+  }
+}
+.club .club__content .text--club {
+  padding-left: 50px;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+  margin-top: 0;
+}
+@media only screen and (max-width : 767px) {
+  .club .club__content .text--club {
+    margin-top: 30px;
+  }
+}
 .news {
   background-color: #d11221;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+}
+.news .journal {
+  background-color: #ededeb;
+}
+@media only screen and (min-width : 768px) {
   .news .journal {
-    background-color: #ededeb; }
-    @media screen and (min-width: 767px) {
-      .news .journal {
-        padding: 20px;
-        width: 77%;
-        margin-left: 18%;
-        position: relative;
-        bottom: -150px; } }
-    @media screen and (min-width: 999px) {
-      .news .journal {
-        padding: 40px; } }
-    @media screen and (max-width: 767px) {
-      .news .journal {
-        width: 94%;
-        margin-left: 0%;
-        margin-right: 0%;
-        padding: 30px 20px; } }
-    .news .journal p, .news .journal span, .news .journal h3, .news .journal h2, .news .journal a {
-      color: black; }
-    .news .journal .journal__headline {
-      width: 100%;
-      display: block;
-      border-bottom: 5px solid black;
-      text-transform: uppercase;
-      font-size: 30px;
-      font-weight: bold; }
-    .news .journal .article__headline {
-      display: block;
-      width: 100%;
-      text-transform: uppercase; }
-      @media screen and (max-width: 768px) {
-        .news .journal .article__headline {
-          float: none;
-          width: 100%; } }
-      @media screen and (max-width: 766px) {
-        .news .journal .article__headline {
-          font-size: 20px; } }
-      @media screen and (min-width: 767px) {
-        .news .journal .article__headline {
-          font-size: 26px; } }
-    .news .journal .article__date {
-      display: block;
-      text-align: right;
-      width: 46%;
-      font-size: 16px; }
-      @media screen and (max-width: 768px) {
-        .news .journal .article__date {
-          width: 100%; } }
-    .news .journal .article__image {
-      width: 46%;
-      height: 30vh;
-      float: left;
-      display: block;
-      background-color: #9d9d9c;
-      position: relative; }
-      @media screen and (max-width: 768px) {
-        .news .journal .article__image {
-          float: none;
-          width: 100%;
-          margin-bottom: 20px; } }
-    .news .journal .a--underlined:after {
-      background-color: black; }
-    .news .journal .article__text {
-      display: block;
-      float: right;
-      width: 46%;
-      padding-bottom: 30px; }
-      @media screen and (max-width: 768px) {
-        .news .journal .article__text {
-          float: none;
-          width: 100%; } }
-      .news .journal .article__text p {
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: 0; }
-
+    padding: 20px;
+    width: 77%;
+    margin-left: 18%;
+    position: relative;
+    bottom: -150px;
+  }
+}
+@media screen and (min-width: 999px) {
+  .news .journal {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .news .journal {
+    width: 94%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 30px 20px;
+  }
+}
+.news .journal p,
+.news .journal span,
+.news .journal h3,
+.news .journal h2,
+.news .journal a {
+  color: black;
+}
+.news .journal .journal__headline {
+  width: 100%;
+  display: block;
+  border-bottom: 5px solid black;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+.news .journal .article__headline {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .news .journal .article__headline {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 767px) {
+  .news .journal .article__headline {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .news .journal .article__headline {
+    font-size: 26px;
+  }
+}
+.news .journal .article__date {
+  display: block;
+  text-align: right;
+  width: 46%;
+  font-size: 16px;
+}
+@media only screen and (max-width : 767px) {
+  .news .journal .article__date {
+    width: 100%;
+  }
+}
+.news .journal .article__image {
+  width: 46%;
+  height: 30vh;
+  float: left;
+  display: block;
+  background-color: #9d9d9c;
+  position: relative;
+}
+@media only screen and (max-width : 767px) {
+  .news .journal .article__image {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.news .journal .a--underlined:after {
+  background-color: black;
+}
+.news .journal .article__text {
+  display: block;
+  float: right;
+  width: 46%;
+  padding-bottom: 30px;
+}
+@media only screen and (max-width : 767px) {
+  .news .journal .article__text {
+    float: none;
+    width: 100%;
+  }
+}
+.news .journal .article__text p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
 .members {
-  background-color: #74c5c0; }
-  @media screen and (min-width: 767px) {
-    .members {
-      padding-top: 150px; } }
-
-@media screen and (min-width: 767px) {
+  background-color: #74c5c0;
+}
+@media only screen and (min-width : 768px) {
+  .members {
+    padding-top: 150px;
+  }
+}
+@media only screen and (min-width : 768px) {
   .text--right {
     width: 30%;
     float: right;
-    margin-right: 5vw; } }
-
-@media screen and (min-width: 767px) {
+    margin-right: 5vw;
+  }
+}
+@media only screen and (min-width : 768px) {
   .text--left {
     width: 30%;
-    margin-left: 5vw; } }
-
+    margin-left: 5vw;
+  }
+}
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
@@ -243,23 +335,24 @@ header {
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s; }
-
+  transition: 0.4s;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
   background-color: #fff;
   margin-bottom: 0;
-  padding: 18px; }
-  @media screen and (min-width: 786px) {
-    .active {
-      padding-right: 40vw; } }
-
+  padding: 18px;
+}
+@media screen and (min-width: 786px) {
+  .active {
+    padding-right: 40vw;
+  }
+}
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out; }
-
-/*# sourceMappingURL=style.css.map */
+  transition: max-height 0.2s ease-out;
+}
